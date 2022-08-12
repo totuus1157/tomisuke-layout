@@ -1,0 +1,26 @@
+{
+  "title": "Tomisuke配列",
+  "rules": [
+    {
+      "description": "Tomisuke配列",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "a",
+            "modifiers": {
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "a"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
