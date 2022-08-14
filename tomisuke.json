@@ -7,8 +7,36 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "a",
+            "key_code": "1",
             "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "quote"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_unless",
+              "name": "qwerty_layout",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "q",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option",
+                "control"
+              ],
               "optional": [
                 "caps_lock"
               ]
@@ -16,7 +44,48 @@
           },
           "to": [
             {
-              "key_code": "a"
+              "set_variable": {
+                "name": "qwerty_layout",
+                "value": 1
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "qwerty_layout",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "t",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option",
+                "control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "qwerty_layout",
+                "value": 0
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "qwerty_layout",
+              "value": 1
             }
           ]
         }
