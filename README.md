@@ -1,1 +1,1 @@
-# tomisuke-layout
+# Tomisuke配列 for Karabiner-Elements
