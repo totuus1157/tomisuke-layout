@@ -9,17 +9,17 @@
           "from": {
             "key_code": "q",
             "modifiers": {
-              "mandatory": [
-                "command",
-                "option",
-                "control"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
+              "mandatory": ["command", "option", "control"],
+              "optional": ["caps_lock"]
             }
           },
           "to": [
+            {
+              "set_notification_message": {
+                "id": "qwerty_mode_on",
+                "text": "QWERTY MODE ON"
+              }
+            },
             {
               "set_variable": {
                 "name": "qwerty_layout",
@@ -27,6 +27,19 @@
               }
             }
           ],
+          "to_delayed_action": {
+            "to_if_invoked": [
+              {
+                "set_notification_message": {
+                  "id": "qwerty_mode_on",
+                  "text": ""
+                }
+              }
+            ]
+          },
+          "parameters": {
+            "basic.to_delayed_action_delay_milliseconds": 500
+          },
           "conditions": [
             {
               "type": "variable_if",
@@ -40,17 +53,17 @@
           "from": {
             "key_code": "t",
             "modifiers": {
-              "mandatory": [
-                "command",
-                "option",
-                "control"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
+              "mandatory": ["command", "option", "control"],
+              "optional": ["caps_lock"]
             }
           },
           "to": [
+            {
+              "set_notification_message": {
+                "id": "qwerty_mode_off",
+                "text": "QWERTY MODE OFF"
+              }
+            },
             {
               "set_variable": {
                 "name": "qwerty_layout",
@@ -58,6 +71,19 @@
               }
             }
           ],
+          "to_delayed_action": {
+            "to_if_invoked": [
+              {
+                "set_notification_message": {
+                  "id": "qwerty_mode_off",
+                  "text": ""
+                }
+              }
+            ]
+          },
+          "parameters": {
+            "basic.to_delayed_action_delay_milliseconds": 500
+          },
           "conditions": [
             {
               "type": "variable_if",
@@ -71,9 +97,7 @@
           "from": {
             "key_code": "1",
             "modifiers": {
-              "optional": [
-                "any"
-              ]
+              "optional": ["any"]
             }
           },
           "to": [
@@ -94,9 +118,7 @@
           "from": {
             "key_code": "hyphen",
             "modifiers": {
-              "optional": [
-                "any"
-              ]
+              "optional": ["any"]
             }
           },
           "to": [
@@ -117,9 +139,7 @@
           "from": {
             "key_code": "equal_sign",
             "modifiers": {
-              "optional": [
-                "any"
-              ]
+              "optional": ["any"]
             }
           },
           "to": [
@@ -140,9 +160,7 @@
           "from": {
             "key_code": "equal_sign",
             "modifiers": {
-              "optional": [
-                "any"
-              ]
+              "optional": ["any"]
             }
           },
           "to": [
@@ -163,9 +181,7 @@
           "from": {
             "key_code": "q",
             "modifiers": {
-              "optional": [
-                "any"
-              ]
+              "optional": ["any"]
             }
           },
           "to": [
@@ -186,9 +202,7 @@
           "from": {
             "key_code": "w",
             "modifiers": {
-              "optional": [
-                "any"
-              ]
+              "optional": ["any"]
             }
           },
           "to": [
@@ -209,9 +223,7 @@
           "from": {
             "key_code": "e",
             "modifiers": {
-              "optional": [
-                "any"
-              ]
+              "optional": ["any"]
             }
           },
           "to": [
@@ -232,9 +244,7 @@
           "from": {
             "key_code": "r",
             "modifiers": {
-              "optional": [
-                "any"
-              ]
+              "optional": ["any"]
             }
           },
           "to": [
@@ -255,9 +265,7 @@
           "from": {
             "key_code": "t",
             "modifiers": {
-              "optional": [
-                "any"
-              ]
+              "optional": ["any"]
             }
           },
           "to": [
@@ -278,9 +286,7 @@
           "from": {
             "key_code": "y",
             "modifiers": {
-              "optional": [
-                "any"
-              ]
+              "optional": ["any"]
             }
           },
           "to": [
@@ -301,9 +307,7 @@
           "from": {
             "key_code": "u",
             "modifiers": {
-              "optional": [
-                "any"
-              ]
+              "optional": ["any"]
             }
           },
           "to": [
@@ -324,9 +328,7 @@
           "from": {
             "key_code": "i",
             "modifiers": {
-              "optional": [
-                "any"
-              ]
+              "optional": ["any"]
             }
           },
           "to": [
@@ -347,9 +349,7 @@
           "from": {
             "key_code": "o",
             "modifiers": {
-              "optional": [
-                "any"
-              ]
+              "optional": ["any"]
             }
           },
           "to": [
@@ -370,9 +370,7 @@
           "from": {
             "key_code": "s",
             "modifiers": {
-              "optional": [
-                "any"
-              ]
+              "optional": ["any"]
             }
           },
           "to": [
@@ -393,9 +391,7 @@
           "from": {
             "key_code": "d",
             "modifiers": {
-              "optional": [
-                "any"
-              ]
+              "optional": ["any"]
             }
           },
           "to": [
@@ -416,9 +412,7 @@
           "from": {
             "key_code": "f",
             "modifiers": {
-              "optional": [
-                "any"
-              ]
+              "optional": ["any"]
             }
           },
           "to": [
@@ -439,9 +433,7 @@
           "from": {
             "key_code": "g",
             "modifiers": {
-              "optional": [
-                "any"
-              ]
+              "optional": ["any"]
             }
           },
           "to": [
@@ -462,9 +454,7 @@
           "from": {
             "key_code": "h",
             "modifiers": {
-              "optional": [
-                "any"
-              ]
+              "optional": ["any"]
             }
           },
           "to": [
@@ -485,9 +475,7 @@
           "from": {
             "key_code": "j",
             "modifiers": {
-              "optional": [
-                "any"
-              ]
+              "optional": ["any"]
             }
           },
           "to": [
@@ -508,9 +496,7 @@
           "from": {
             "key_code": "k",
             "modifiers": {
-              "optional": [
-                "any"
-              ]
+              "optional": ["any"]
             }
           },
           "to": [
@@ -531,9 +517,7 @@
           "from": {
             "key_code": "l",
             "modifiers": {
-              "optional": [
-                "any"
-              ]
+              "optional": ["any"]
             }
           },
           "to": [
@@ -554,9 +538,7 @@
           "from": {
             "key_code": "semicolon",
             "modifiers": {
-              "optional": [
-                "any"
-              ]
+              "optional": ["any"]
             }
           },
           "to": [
@@ -577,9 +559,7 @@
           "from": {
             "key_code": "quote",
             "modifiers": {
-              "optional": [
-                "any"
-              ]
+              "optional": ["any"]
             }
           },
           "to": [
@@ -600,9 +580,7 @@
           "from": {
             "key_code": "z",
             "modifiers": {
-              "optional": [
-                "any"
-              ]
+              "optional": ["any"]
             }
           },
           "to": [
@@ -623,9 +601,7 @@
           "from": {
             "key_code": "x",
             "modifiers": {
-              "optional": [
-                "any"
-              ]
+              "optional": ["any"]
             }
           },
           "to": [
@@ -646,9 +622,7 @@
           "from": {
             "key_code": "c",
             "modifiers": {
-              "optional": [
-                "any"
-              ]
+              "optional": ["any"]
             }
           },
           "to": [
@@ -669,9 +643,7 @@
           "from": {
             "key_code": "v",
             "modifiers": {
-              "optional": [
-                "any"
-              ]
+              "optional": ["any"]
             }
           },
           "to": [
@@ -692,9 +664,7 @@
           "from": {
             "key_code": "b",
             "modifiers": {
-              "optional": [
-                "any"
-              ]
+              "optional": ["any"]
             }
           },
           "to": [
@@ -715,9 +685,7 @@
           "from": {
             "key_code": "n",
             "modifiers": {
-              "optional": [
-                "any"
-              ]
+              "optional": ["any"]
             }
           },
           "to": [
@@ -738,9 +706,7 @@
           "from": {
             "key_code": "m",
             "modifiers": {
-              "optional": [
-                "any"
-              ]
+              "optional": ["any"]
             }
           },
           "to": [
@@ -761,9 +727,7 @@
           "from": {
             "key_code": "comma",
             "modifiers": {
-              "optional": [
-                "any"
-              ]
+              "optional": ["any"]
             }
           },
           "to": [
@@ -784,9 +748,7 @@
           "from": {
             "key_code": "period",
             "modifiers": {
-              "optional": [
-                "any"
-              ]
+              "optional": ["any"]
             }
           },
           "to": [
@@ -807,9 +769,7 @@
           "from": {
             "key_code": "slash",
             "modifiers": {
-              "optional": [
-                "any"
-              ]
+              "optional": ["any"]
             }
           },
           "to": [
@@ -830,9 +790,7 @@
           "from": {
             "key_code": "international1",
             "modifiers": {
-              "optional": [
-                "any"
-              ]
+              "optional": ["any"]
             }
           },
           "to": [
