@@ -8,7 +8,7 @@
 
 ## 導入方法
 1. Karabiner-Elementsをまだインストールされていない方は、[こちら](https://karabiner-elements.pqrs.org/)からダウンロード、インストールしてください。
-2. Tomisuke配列の設定ファイルを右側にある`Releases`からダウンロード、解凍します。
+2. Tomisuke配列の設定ファイルを<strong>右側にある`Releases`</strong>からダウンロード、解凍します。
 3. 解凍後のフォルダの中にある`tomisuke.json`と`tomisuke-qwerty-command.json`、いずれかのファイル（あるいは両方）をKarabiner-Elementsの設定フォルダ`~/.config/karabiner/assets/complex_modifications`に移動させて下さい（Macのディレクトリ構成に詳しくない方は、Finderのメニューバーにある`移動`→`フォルダへ移動…`で表示されるポップアップウィンドウにこのパスを入力すれば開くことができます）。
     - `onishi.json`は完全なレイアウト変更、`onishi-qwerty-command.json`はCommand キーとの組み合わせのみ QWERTY 準拠となっています。
 4. Karabiner-Elementsの設定ウィンドウを開き`Complex Modifications`の`Add predefined rule`ボタンを押すと、ポップアップウィンドウの中に`Tomisuke配列`または`Tomisuke-QWERTY⌘配列`が存在するので`Enable`ボタンで有効化してください。これでTomisuke配列が使えるようになります（もし見当たらない場合はファイルの場所が正しいか確認して下さい）。
