@@ -14,4 +14,4 @@
 4. Karabiner-Elementsの設定ウィンドウを開き`Complex Modifications`の`Add predefined rule`ボタンを押すと、ポップアップウィンドウの中に`Tomisuke配列`または`Tomisuke-QWERTY⌘配列`が存在するので`Enable`ボタンで有効化してください。これでTomisuke配列が使えるようになります（もし見当たらない場合はファイルの場所が正しいか確認して下さい）。
 
 ## もし気に入っていただけたなら
-<a href="https://www.buymeacoffee.com/anzumaru_software" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Q5Q21EYFNN)
